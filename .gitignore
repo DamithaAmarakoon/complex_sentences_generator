@@ -1,0 +1,6 @@
+.env
+data
+*.class
+*.java
+*.java~
+__pycache__
