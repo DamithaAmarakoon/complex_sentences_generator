@@ -13,7 +13,8 @@ String text2;
 void append(String c){
   text2+=c;
 }
-void replace_func(String text)throws IOException{
+
+void replace_func(String text) throws IOException{
 
   FileWriter myWriter = new FileWriter("../data/intermediate_out.txt");
   
@@ -106,49 +107,49 @@ void replace_func(String text)throws IOException{
   specialCharUni[0]="\u0df2"; specialChar[0]="ruu";
   specialCharUni[1]="\u0df3"; specialChar[1]="ru";
   
-  
   String text1 = "";
   int i = 0;
   String r;
   
   text1 = text1 + text; 
     
-  for (int j=0; j<specialConsonants.length; j++){
+  for (int j = 0; j < specialConsonants.length; j++){
     text1 = text1.replace(specialConsonants[j], specialConsonantsUni[j]);
   }
   
-  for (int k=0; k<specialCharUni.length; k++){
-    for (var j=0;j<consonants.length;j++){
+  for (int k = 0; k < specialCharUni.length; k++){
+    for (var j = 0; j < consonants.length; j++){
       String s = consonants[j] + specialChar[k];
       String v = consonantsUni[j] + specialCharUni[k];
       text1 = text1.replace(s, v);
     }
   }
   
-  for (int j=0;j<consonants.length;j++){
-    for (int k=0;k<vowels.length;k++){
+  for (int j = 0;j < consonants.length; j++){
+    for (int k = 0; k < vowels.length; k++){
       String s = consonants[j] + "r" + vowels[k];
-      String v = consonantsUni[j] +"\u0dca"+"\u200D"+"\u0dbb" +vowelModifiersUni[k];
+      String v = consonantsUni[j] + "\u0dca" + "\u200D" + "\u0dbb" + vowelModifiersUni[k];
       text1 = text1.replace(s, v);
     }
+
     String s = consonants[j] + "r";
-    String v = consonantsUni[j] + "\u0dca"+"\u0dbb";
+    String v = consonantsUni[j] + "\u0dca" + "\u0dbb";
     text1 = text1.replace(s, v);
   }
   
-  for ( int k=0;k<consonants.length;k++){
-    for (int j=0;j<vowels.length;j++){ 
-      String s = consonants[k]+vowels[j];
+  for (int k = 0; k < consonants.length; k++){
+    for (int j = 0; j < vowels.length; j++) { 
+      String s = consonants[k] + vowels[j];
       String v = consonantsUni[k] + vowelModifiersUni[j];
       text1 = text1.replace(s, v);
     }
   }
   
-  for (int j=0; j<consonants.length; j++){
-    text1 = text1.replaceAll(consonants[j], consonantsUni[j]+"\u0dca");
+  for (int j = 0; j < consonants.length; j++){
+    text1 = text1.replaceAll(consonants[j], consonantsUni[j]+ "\u0dca");
   }
   
-  for (int j=0; j<vowels.length; j++){
+  for (int j = 0; j < vowels.length; j++){
     text1 = text1.replaceAll(vowels[j], vowelsUni[j]);
   }
 
