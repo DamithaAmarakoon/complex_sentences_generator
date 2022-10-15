@@ -44,12 +44,12 @@ void replace_func(String text) throws IOException{
   vowelsUni[12]="\u0d87";   vowels[12]="/a";    vowelModifiersUni[12]="\u0dd0";
   
   vowelsUni[13]="\u0d85";  vowels[13]="a";    vowelModifiersUni[13]="";
-  vowelsUni[14]="\u0d87";    vowels[14]="A";    vowelModifiersUni[14]="\u0dd0";
-  vowelsUni[15]="\u0d89";   vowels[15]="i";    vowelModifiersUni[15]="\u0dd2";
-  vowelsUni[16]="\u0d91";   vowels[16]="e";    vowelModifiersUni[16]="\u0dd9";
-  vowelsUni[17]="\u0d8b";   vowels[17]="u";    vowelModifiersUni[17]="\u0dd4";
-  vowelsUni[18]="\u0d94";    vowels[18]="o";    vowelModifiersUni[18]="\u0ddc";
-  vowelsUni[19]="\u0d93";   vowels[19]="I";    vowelModifiersUni[19]="\u0ddb";
+  vowelsUni[14]="\u0d87";  vowels[14]="A";    vowelModifiersUni[14]="\u0dd0";
+  vowelsUni[15]="\u0d89";  vowels[15]="i";    vowelModifiersUni[15]="\u0dd2";
+  vowelsUni[16]="\u0d91";  vowels[16]="e";    vowelModifiersUni[16]="\u0dd9";
+  vowelsUni[17]="\u0d8b";  vowels[17]="u";    vowelModifiersUni[17]="\u0dd4";
+  vowelsUni[18]="\u0d94";  vowels[18]="o";    vowelModifiersUni[18]="\u0ddc";
+  vowelsUni[19]="\u0d93";  vowels[19]="I";    vowelModifiersUni[19]="\u0ddb";
   
   specialConsonantsUni[0]="\u0d82"; specialConsonants[0]="\\n";
   specialConsonantsUni[1]="\u0d83"; specialConsonants[1]="/h";
